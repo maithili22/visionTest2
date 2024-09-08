@@ -1,0 +1,6 @@
+Flask
+pillow
+langchain
+langchain-google-genai
+google-generativeai
+flask_cors

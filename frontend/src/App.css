@@ -1,0 +1,89 @@
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.uploadSection {
+  border: 1px solid #4a4a4a;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.uploadLabel {
+  display: block;
+  cursor: pointer;
+}
+
+.fileInput {
+  display: none;
+}
+
+.uploadBox {
+  border: 2px dashed #4a4a4a;
+  padding: 40px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.fileFormatText {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #9a9a9a;
+}
+
+.fileList {
+  margin-top: 20px;
+}
+
+.fileItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #4a4a4a;
+  padding-bottom: 5px;
+}
+
+.removeFileButton {
+  background-color: #ff5c5c;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 10%;
+  padding: 0 8px;
+}
+
+.textarea {
+  width: 98%;
+  height: 100px;
+  border-radius: 8px;
+  border: 1px solid #4a4a4a;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.describeButton {
+  background-color: #3b82f6;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
