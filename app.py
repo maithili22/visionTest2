@@ -17,19 +17,19 @@ CORS(app, origins=['*'])
 
 
 
-# Set up the Google API key
+
 os.environ["GOOGLE_API_KEY"] = "your-api-key"
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 
-# Load the generative model
+
 vision_model = GenerativeModel('gemini-1.5-flash')
 
-# Function to get image description from the Generative AI model
+
 def get_image_description(image):
     response = vision_model.generate_content(["Describe the UI elements and layout of this image in detail:", image])
     return response.text
 
-# Function to generate test cases based on image descriptions and context
+
 def generate_testcase(description, context=None):
     example_test_cases = """
     Example 1:
@@ -88,7 +88,7 @@ def generate_testcase(description, context=None):
 
     return result
 
-# Endpoint to handle image upload and generate test cases
+
 @app.route('/generate-testcases', methods=['POST'])
 @cross_origin()
 def generate_test_cases():
